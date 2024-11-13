@@ -1,0 +1,22 @@
+{
+  "name": "cypress_intermediario_v3",
+  "version": "1.0.0",
+  "description": "Projeto de testes - Gitlab",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/danilorlimma/cypressintermediariov3.git"
+  },
+  "author": "Danilo Lima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danilorlimma/cypressintermediariov3/issues"
+  },
+  "homepage": "https://github.com/danilorlimma/cypressintermediariov3#readme",
+  "dependencies": {
+    "cypress": "^12.0.2"
+  }
+}
