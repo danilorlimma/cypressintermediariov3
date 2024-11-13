@@ -16,7 +16,9 @@
     "url": "https://github.com/danilorlimma/cypressintermediariov3/issues"
   },
   "homepage": "https://github.com/danilorlimma/cypressintermediariov3#readme",
-  "dependencies": {
-    "cypress": "^12.0.2"
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.0.2",
+    "cypress-plugin-api": "^2.6.1"
   }
 }
