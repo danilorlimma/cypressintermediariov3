@@ -39,9 +39,16 @@ Cypress.Commands.add('login', (
     login()
   })
 
-  Cypress.Commands.add('logout',() => {
+Cypress.Commands.add('logout',() => {
     cy.get(".qa-user-avatar").click()
     cy.contains('Sign out').click()
 
   })
+Cypress.Commands.add('gui_createProject', project =>{
+  cy.visit('/projects/new')
+        cy.get('#blank-project-name #project_name').type(project.name)
+        cy.get('#project_description').type(project.description)
+        cy.get('#project_initialize_with_readme').check()
+        cy.get('#blank-project-pane .btn-success').click()
+})
   
