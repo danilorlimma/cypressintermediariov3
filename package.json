@@ -4,7 +4,8 @@
   "description": "Projeto de testes - Gitlab",
   "main": "cypress.config.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress run",
+    "open": "cypress open"
   },
   "repository": {
     "type": "git",
