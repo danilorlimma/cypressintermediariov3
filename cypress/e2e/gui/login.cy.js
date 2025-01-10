@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 describe('Login', () => {
   it('successfully', () => {
     const user = Cypress.env('user_name')
