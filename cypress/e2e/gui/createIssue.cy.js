@@ -2,6 +2,7 @@ import { faker } from '@faker-js/faker'
 /// <reference types="cypress" />
 
 describe('Create Issue', () => {
+    beforeEach(() => cy.api_deleteProjects())
     const issue = {
         title: `issue-${faker.datatype.uuid()}`,
         description: faker.random.words(3),
@@ -13,8 +14,8 @@ describe('Create Issue', () => {
     }
     beforeEach(() => {
         cy.login()
-        cy.gui_createProject(issue.project)
-                
+        //cy.gui_createProject(issue.project)
+        cy.api_createProject(issue.project)      
     });
 
     it('successfully', () => {
