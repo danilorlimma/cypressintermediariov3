@@ -14,6 +14,8 @@ describe('git clone', () => {
   it('successfully', () => {
     cy.cloneViaSSH(project)
 
-   
+    cy.readFile(`cypress/downloads/${project.name}/README.md`)
+      .should('contain', `# ${project.name}`)
+      .and('contain', project.description)
   })
 })
